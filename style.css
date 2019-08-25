@@ -1,0 +1,202 @@
+
+body{
+  margin: 0;
+  background: #eee;
+  height: auto;
+}
+
+h1{
+  font-weight: 400;
+  font-size: 2.9rem;
+  text-transform: uppercase;
+  font-family: 'cf politicians killers';
+  margin: 0;
+}
+
+h2{
+  font-weight: 400;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-family: 'funkrocker';
+  text-transform: capitalize;
+  margin: 0;
+}
+
+
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main{
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0,0,0,0.1),-30px 0px 40px rgba(0,0,0,0.1);
+}
+
+#landing{
+  background: #fff;
+}
+
+
+
+#landing-text{
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-right: 1rem;
+}
+
+#landing-text h2{
+  color: #888;
+}
+
+#landing-image{
+  background-image: url('img/h3.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn{
+  padding: 0.5rem 2rem;
+  font-family: 'quicksand';
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #333;
+  transition: background 500ms ease;
+}
+
+.btn:hover{
+  background: #f4f4f4;
+}
+
+#header{
+ padding: 1.5rem;
+ text-align: center;
+ background: #333;
+ color: #fff;
+}
+
+#header h2{
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding: 0 1rem 0 1rem;
+}
+
+.caption{
+  padding: 0.8rem;
+  text-align: center;
+}
+
+.caption h3{
+  font-family: 'gist';
+}
+
+.caption p{
+  font-family: 'quicksand';
+}
+
+
+footer{
+  text-align: center;
+  padding: 2rem 1rem;
+  margin: auto;
+  color: #333;
+}
+
+footer h3{
+  font-family: 'gracetians';
+  letter-spacing: 4px;
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+footer p{
+  font-family: 'gracetians';
+  font-size: 1.2rem;
+}
+
+.social-media{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.social-media img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #333;
+  margin: 10px;
+  padding: 5px;
+  transition: 0.5s ease-in;
+}
+
+.social-media img:hover{
+  transform: scale(1.1);
+
+}
+
+/* screen size 500px and up */
+
+@media (min-width: 500px){
+  #landing{
+    display: flex;
+    height: 100%;
+  }
+
+  #landing-text-inner span{
+    color: #ff0000;
+    font-weight: 500;
+  }
+
+
+  #landing-text{
+    height: 100vh;
+  }
+
+  #landing-image{
+    height: 100vh;
+  }
+}
+
+/* screen sizes 700px and up */
+
+.btn{
+  padding: 1rem 3rem;
+}
+
+@media(max-width: 768px){
+  footer h3{
+    font-size: 2rem;
+  }
+
+  footer p{
+    font-size: 16px;
+  }
+
+  footer img{
+    width: 20px
+    height: 20px;
+  }
+
+  #landing-text-inner span{
+    color: #ff0000;
+    font-weight: 500;
+  }
+}
